@@ -21,8 +21,8 @@ const postScheme = new mongoose.Schema({ title: String, content: String });
 const Post = mongoose.model("Post", postScheme);
 
 const homeStartingContent = "Add '/compose' at the end of ☝🏻url to add a new post";
-const aboutContent = "Hi! This Daily Journal was made by Parv Garg 🤓 ";
-const contactContent = "Heya! Reach me at Parv3213@gmail.com";
+const aboutContent = "Hi! This Daily Journal was made by Mitali Laroia 🤓 ";
+const contactContent = "Heya! Reach me at 04042001mitali@gmail.com";
 
 // ---------------------- Home Route ----------------------
 app.get("/", (req, res) => {
