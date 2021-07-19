@@ -20,7 +20,7 @@ A fully fledged open source blog publishing application, built with ♥ using No
 
   ##### Clone the repository
 ```bash
-git clone https://github.com/ishandeveloper/Node-Blog.git
+git clone https://github.com/Mitali-laroia/blog-website.git
 ```
   ##### Move to the desired folder
 ```bash
