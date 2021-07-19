@@ -2,8 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
+const dotenv = require('dotenv');
 const mongoose = require("mongoose");
-
+dotenv.config();
 const app = express();
 
 app.set("view engine", "ejs");
@@ -11,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // ---------------------- Mongoose DB connect ----------------------
-mongoose.connect("mongodb://localhost/dailyJournalDB", {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
